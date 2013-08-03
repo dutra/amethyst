@@ -1,0 +1,20 @@
+# Place all the behaviors and hooks related to the matching controller here.
+# All this logic will automatically be available in application.js.
+# You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
+
+/*$(document).ready(function() {
+    $(".item").hover(function() {
+	$(this).stop().animate({ backgroundColor: "#a7bf51"}, 800); 
+    },
+		     function() {
+			 $(this).stop().animate({ backgroundColor: "#ffffff" }, 800);
+		     });
+});*/ 
+
+$(document).ready(function() {
+    $(".item").hover(function() {
+	$(this).stop().fadeTo(800, 0.3);
+    },function() {
+	$(this).stop().fadeTo(800, 1);
+    });
+});

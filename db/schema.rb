@@ -11,12 +11,37 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130629044819) do
+ActiveRecord::Schema.define(:version => 20130701161044) do
+
+  create_table "albums", :force => true do |t|
+    t.string   "title"
+    t.string   "description"
+    t.string   "location"
+    t.date     "date"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "exif_infos", :force => true do |t|
+    t.integer  "photo_id"
+    t.string   "camera"
+    t.string   "shutter_speed"
+    t.integer  "aperture"
+    t.string   "focal_length"
+    t.integer  "iso"
+    t.datetime "taken"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
 
   create_table "photos", :force => true do |t|
     t.string   "file"
+    t.integer  "album_id"
+    t.integer  "album_cover_id"
     t.string   "title"
     t.string   "description"
+    t.string   "camera"
+    t.string   "lens"
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
     t.string   "file_file_name"
