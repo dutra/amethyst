@@ -8,5 +8,8 @@ $(document).ready(function() {
     },function() {
 	$('.carousel-control').stop().fadeTo(500, 0.05);
     });
+
+
+    $(".video-box").fitVids();
     
 });
