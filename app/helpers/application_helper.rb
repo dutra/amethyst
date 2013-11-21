@@ -6,14 +6,21 @@ module ApplicationHelper
     when 'albums'
       if controller_name == "albums"
         link_to "Photography", albums_path, class: "active"
-      else 
+      else
         link_to "Photography", albums_path
       end
     when 'hobbies'
       if controller_name == "static_pages" and action_name == "hobbies"
         link_to "Hobbies", '/hobbies', class: "active"
-      else 
+      else
         link_to "Hobbies", '/hobbies'
+      end
+
+    when 'projects'
+      if controller_name == "static_pages" and action_name == "projects"
+        link_to "Projects", '/projects', class: "active"
+      else
+        link_to "Projects", '/projects'
       end
     end
   end
@@ -27,5 +34,5 @@ module ApplicationHelper
       "#{base_title} | #{page_title}"
     end
   end
-  
+
 end

@@ -55,7 +55,6 @@ h1 {
     small {
 	color: white;
     }
-    width: 100%;
     background-color: $grey-900;
     color: $orange;
 }
@@ -168,7 +167,7 @@ h3.title-box small {
     border-radius: 5px;
 }
 .header  .navbar > .nav > li > a {
-    padding: 10px 22px;
+    padding: 10px 18px;
     color: white;
     background-color: $grey-700;
     &:hover {

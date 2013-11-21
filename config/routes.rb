@@ -4,7 +4,8 @@ Amethyst::Application.routes.draw do
   
   resources :photos
   resources :albums
-
+  resources :projects
+  
   match '/hobbies', to: 'static_pages#hobbies'
 
   # The priority is based upon order of creation:
