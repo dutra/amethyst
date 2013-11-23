@@ -1,0 +1,46 @@
+<div class="row">
+  <div class="span12">
+    <h1>Hobbies#all</h1>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="wrapper-glass span3">
+    <%= image_tag "cheese.jpg", class: "img-rounded item-hover img-glass" %>
+    <div class="glass item-hover-reverse span3">
+      <h1>CHEESE MAKING</h1>
+    </div>
+  </div>
+
+      <div class="wrapper-glass span3">
+      <%= image_tag "cycling.jpg", class: "img-rounded item-hover img-glass" %>
+      <div class="glass item-hover-reverse span3">
+	<h1>CYCLING</h1>
+    </div>
+  </div>
+
+  
+  <div class="wrapper-glass span3">
+    <%= image_tag "photography.jpg", class: "img-rounded item-hover img-glass" %>
+    <div class="glass span3">
+      <h1>PHOTOGRAPHY</h1>
+    </div>
+  </div>
+
+  <div class="wrapper-glass span3">
+    <%= image_tag "astronomy.jpg", class: "img-rounded item-hover img-glass" %>
+    <div class="glass item-hover-reverse span3">
+      <h1>ASTRONOMY</h1>
+    </div>
+  </div>
+
+
+
+
+</div>
+<br><br><br><br><br><br>
+
+<% provide :scripts do %>
+<%= javascript_include_tag "hobbies" %>
+<% end %>

@@ -3,6 +3,13 @@ module ApplicationHelper
   # Return a link with correct active section
   def header_link_to(section)
     case section
+    when 'home'
+      if controller_name == "static_pages" and action_name == "home"
+        link_to "Home", root_path, class: "active"
+      else
+        link_to "Home", root_path
+      end
+
     when 'albums'
       if controller_name == "albums"
         link_to "Photography", albums_path, class: "active"
@@ -10,14 +17,14 @@ module ApplicationHelper
         link_to "Photography", albums_path
       end
     when 'hobbies'
-      if controller_name == "static_pages" and action_name == "hobbies"
+      if controller_name == "hobbies"
         link_to "Hobbies", '/hobbies', class: "active"
       else
         link_to "Hobbies", '/hobbies'
       end
 
     when 'projects'
-      if controller_name == "static_pages" and action_name == "projects"
+      if controller_name == "projects"
         link_to "Projects", '/projects', class: "active"
       else
         link_to "Projects", '/projects'

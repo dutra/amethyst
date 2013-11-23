@@ -6,7 +6,11 @@ Amethyst::Application.routes.draw do
   resources :albums
   resources :projects
   
-  match '/hobbies', to: 'static_pages#hobbies'
+  match '/hobbies', to: 'hobbies#index'
+  match '/hobbies/astronomy', to: 'hobbies#astronomy'
+  match '/hobbies/cheesemaking', to: 'hobbies#cheese_making'
+  match '/hobbies/photography', to: 'hobbies#photography'
+  match '/hobbies/cycling', to: 'hobbies#cycling'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
