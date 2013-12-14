@@ -17,8 +17,8 @@ $grey-light: #D9D7D3;
 $purple: #6600CD;
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/ MIXINS
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  / MIXINS
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 @mixin box_sizing {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -26,8 +26,8 @@ $purple: #6600CD;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/ BODY
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  / BODY
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 body {
     font-family: 'Varela Round', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -41,10 +41,10 @@ body {
 .main-section {
     padding-bottom: 30px;
 }
-    
+
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/ TYPOGRAPHY
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  / TYPOGRAPHY
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .emph {
     color: $orange;
 }
@@ -53,7 +53,7 @@ h1 {
 }
 .title-box {
     small {
-	color: white;
+        color: white;
     }
     background-color: $grey-900;
     color: $orange;
@@ -71,7 +71,7 @@ h3.title-box {
 h3.title-box small {
     font-weight: 100;
     line-height: 24px;
-    font-size: 22px;   
+    font-size: 22px;
 }
 .secondary-title {
     color: white;
@@ -124,8 +124,8 @@ h3.title-box small {
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/ HEADER
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  / HEADER
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .black-bg {
     width: 100%;
     background-color: $grey-900;
@@ -154,12 +154,15 @@ h3.title-box small {
     text-weight: 900;
     font-size: 60px;
     &:hover {
-	text-decoration: none;
+        text-decoration: none;
     }
 }
 .header .navigation {
     padding:  auto 0 0 0;
     margin: auto 0;
+}
+.navbar .nav {
+    margin: 0px;
 }
 .header .nav {
     padding: 0 5px;
@@ -172,35 +175,36 @@ h3.title-box small {
 .header  .navbar > .nav > li > a {
     padding: 10px 18px;
     color: white;
+    font-size: 16px;
     background-color: $grey-700;
     &:hover {
-	color: white;
-	background-color: $orange;
+        color: white;
+        background-color: $orange;
     }
     &.active {
-	background-color: $orange;
+        background-color: $orange;
     }
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/ SECONDARY HEADER
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  / SECONDARY HEADER
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .header-secondary {
     .nav {
-	font-weight: bold;
-	a {
-	    color: $orange;
-	    background-color: $grey-100;
-	}
-	a:hover {
-	    background-color: #F5F5F5;
-	}
+        font-weight: bold;
+        a {
+            color: $orange;
+            background-color: $grey-100;
+        }
+        a:hover {
+            background-color: #F5F5F5;
+        }
     }
 }
 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   / FORM
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 input[type='text'], input[type='password'], input, textarea, select, .uneditable-input {
     border: 1px solid #bbb;
@@ -215,3 +219,45 @@ input[type='text'], input[type='password'], input, textarea, select, .uneditable
 .debug {
     margin: 30px auto;
 }
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  / PROJECT LIST
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+div.project {
+    padding: 10px 0px;
+    &:hover {
+	background: #eee;
+    }
+}
+.project p.description {
+    color: #999999;
+    font-size: 18px;
+    
+}
+
+
+/* div { */
+/*   margin: 20px; */
+/*   } */
+/* .project h3 { */
+/*     font: bold 20px/1.5 Helvetica, Verdana, sans-serif; */
+/* } */
+
+/* .project li img { */
+/*     margin: 0 15px 0 0; */
+/* } */
+
+/* .project li p { */
+/*     font: 200 12px/1.5 Georgia, Times New Roman, serif; */
+/* } */
+
+/* .projct li { */
+/*     padding: 10px; */
+/*     overflow: auto; */
+/* } */
+
+/* .project li:hover { */
+/*     background: #eee; */
+/*     cursor: pointer; */
+/* } */

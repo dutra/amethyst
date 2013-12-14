@@ -29,6 +29,12 @@ module ApplicationHelper
       else
         link_to "Projects", '/projects'
       end
+    when 'contact'
+      if controller_name == "static_pages" and action_name == "contact"
+        link_to "Contact", '/contact', class: "active"
+      else
+        link_to "Contact", '/contact'
+      end
     end
   end
 

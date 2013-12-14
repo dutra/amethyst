@@ -5,7 +5,9 @@ Amethyst::Application.routes.draw do
   resources :photos
   resources :albums
   resources :projects
-  
+
+  match '/contact', to: 'static_pages#contact'
+
   match '/hobbies', to: 'hobbies#index'
   match '/hobbies/astronomy', to: 'hobbies#astronomy'
   match '/hobbies/cheesemaking', to: 'hobbies#cheese_making'
