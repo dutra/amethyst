@@ -42,6 +42,9 @@ ActiveRecord::Schema.define(:version => 20131228003501) do
     t.string   "focal_length"
     t.integer  "iso"
     t.datetime "taken"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.boolean  "exif"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end

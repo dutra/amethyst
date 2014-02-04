@@ -12,8 +12,8 @@ class ExifInfo < ActiveRecord::Base
     ei.focal_length = info.focal_length.to_s
     ei.iso = info.iso_speed_ratings.to_i
     ei.shutter_speed = info.shutter_speed_value.to_s
-    ei.latitude = info.gps.latitude.to_f
-    ei.longitude = info.gps.longitude.to_f
+#    ei.latitude = info.gps.latitude.to_f unless ei.latitute.blank?
+#    ei.longitude = info.gps.longitude.to_f unless ei.longitude.blank?
 #    ei.taken
  end
 end
