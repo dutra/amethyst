@@ -11,7 +11,6 @@ end
 
 def create_albums
 
-
   CSV.foreach("db/data/albums.csv", headers: true) do | row |
     title = row['title']
     description = row['description']
@@ -31,7 +30,6 @@ end
 
 def create_photos
 
-
   CSV.foreach("db/data/photos.csv", headers: true) do | row |
     file = row['file']
     album = row['album']
@@ -50,9 +48,7 @@ def create_photos
       p.album_cover_id = a.id
     end
     p.save!
-
     
   end
-
 
 end

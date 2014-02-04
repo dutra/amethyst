@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
-    @photos = Photo.find(:all, :order => "id desc", :limit => 3)
+    @carousels = Carousel.all
   end
 
   def hobbies

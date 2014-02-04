@@ -8,7 +8,10 @@ class CreateExifInfos < ActiveRecord::Migration
       t.string :focal_length
       t.integer :iso
       t.datetime :taken
-
+      t.float :latitude
+      t.float :longitude
+      t.boolean :exif
+      
       t.timestamps
     end
   end

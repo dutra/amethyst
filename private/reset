@@ -2,4 +2,10 @@
 
 rm -rf db/development.sqlite3
 bundle exec rake db:migrate
+
+wget 'https://docs.google.com/spreadsheet/pub?key=0AqHBdXx9vx3bdFBybDg3a0E5Zk9pWDQzbG1mVzhSZVE&output=csv' -O db/data/albums.csv
+wget 'https://docs.google.com/spreadsheet/pub?key=0AqHBdXx9vx3bdEdJY0xiaEF0dHZJYzlGN1JUTkdtZkE&output=csv' -O db/data/photos.csv
 bundle exec rake db:photos
+
+wget 'https://docs.google.com/spreadsheet/pub?key=0AqHBdXx9vx3bdGl1eF9ycE40QUY2aUlNN1ZUMWpRT2c&output=csv' -O db/data/carousels.csv
+bundle exec rake db:carousels

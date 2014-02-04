@@ -4,42 +4,29 @@
 <div class="row">
 
   <div class="span7">
+    
     <div id="myCarousel" class="carousel slide">
-
       <div class="carousel-inner">
+
+        <% @carousels.each do |carousel| %>
+        <% if carousel.id == 1 %>
         <div class="item active">
-          <%= link_to @photo do %>
-          <%= image_tag @photos[0].file.url(:carousel) %>
-          <% end %>
-          <div class="carousel-caption">
-            <h4>First here</h4>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <% else %>
+          <div class="item">
+            <% end %>
+            <%= image_tag carousel.file.url(:carousel) %>
+            <div class="carousel-caption">
+              <h4><%= carousel.title %></h4>
+              <p><%= carousel.description %></p>
+            </div>
           </div>
-        </div>
-        <div class="item">
-          <%= link_to @photo do %>
-          <%= image_tag @photos[1].file.url(:carousel) %>
           <% end %>
-          <div class="carousel-caption">
-            <h4>Second here</h4>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          </div>
+
         </div>
-        <div class="item">
-          <%= link_to @photo do %>
-          <%= image_tag @photos[2].file.url(:carousel) %>
-          <% end %>
-          <div class="carousel-caption">
-            <h4>Third here</h4>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          </div>
-        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
       </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-    </div>
-
-
+    
   </div>
 
   <div class="span5">
