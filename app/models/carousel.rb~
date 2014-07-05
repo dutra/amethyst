@@ -1,3 +1,0 @@
-class Carousel < ActiveRecord::Base
-  attr_accessible :belongs_to, :description, :title
-end
