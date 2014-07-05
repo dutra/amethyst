@@ -63,9 +63,10 @@
       </div>
     </div>
 
-    <%= javascript_include_tag "application" %>
-    
-    <%= yield :scripts %>
+     <%= yield :before_scripts %>
+     <%= javascript_include_tag "application" %>
+     
+     <%= yield :scripts %>
     
 
   </body>

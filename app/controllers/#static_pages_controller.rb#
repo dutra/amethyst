@@ -3,6 +3,9 @@ class StaticPagesController < ApplicationController
     @carousels = Carousel.all
   end
 
+  def hobbies
+  end
+
   def contact
     if params[:message].present?
       params[:client_ip] = request.remote_ip
@@ -18,3 +21,5 @@ class StaticPagesController < ApplicationController
 
 
 end
+
+hober

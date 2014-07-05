@@ -11,15 +11,60 @@
 
     <div class="row project img-rounded">
       <div class="span2">
+	<%= image_tag "cross.jpg", class: "img-rounded" %>
+      </div>
+      <div class="span10">
+        <h3>Skyderia Sky Chart</h3>
+        <p class="description">
+	  Skyderia was born from the desire of implementing an online astronomy sky chart. The project relies heavily on WebGL, Three.js and Backbone.js. It provides an interactive interface to visualize the night sky, including planets, the moon, sun,  Messier and Caldwell objects, and more. It dynamically calculates the position of stars and planets based on location and date. 
+	</p>
+	<p class="description">Git reposity: <a href="http://github.com/dutra/glSky">http://github.com/dutra/glSky</a></p>
+      </div>
+    </div>
+
+    <div class="row project img-rounded">
+      <div class="span2">
+	<%= image_tag "kernel.jpg", class: "img-rounded" %>
+      </div>
+      <div class="span10">
+        <h3>Amora Kernel</h3>
+        <p class="description">
+	  Amora is a simple x86 kernel being developed from scratch as a side project for learning purposes.
+	</p>
+	<p class="description">
+	  Currently the kernel has a booloader written in Assembly which sets the GDT, enters protected mode and load a kernel written in C. The kernel has a simple screen driver and handlers for interrupts and the IRQ, which is partly written in Assembly. The PIT interrupt (IRQ0) has been implemented, giving the kernel a periodic interrupt that will be used by the process scheduler later.
+	</p>
+	<p class="description">Git reposity: <a href="http://github.com/dutra/amora">http://github.com/dutra/amora</a></p>
+      </div>
+    </div>
+
+    <div class="row project img-rounded">
+      <div class="span2">
 	<%= image_tag "cpu.jpg", class: "img-rounded" %>
       </div>
       <div class="span10">
-        <h3>Multi Core Processor</h3>
+        <h3>Multi Core SMIPS Processor</h3>
         <p class="description">
-	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquam justo felis, vel suscipit erat venenatis non. Vestibulum ornare rhoncus nunc quis scelerisque. Phasellus sapien orci, luctus sit amet eleifend sit amet, cursus at lectus. Curabitur non purus sodales, semper neque non, rutrum elit. Aenean commodo neque non nulla porta, eget tristique massa tempor.
+	  As the final project for the MIT class 6.S195 - Constructive Computer Architecture, I had to implement a Multi Core SMIPS CPU in Bluespec. The project consisted on the implementation of a cache coherency protocol for a two-core CPU, load-link and store-conditional instructions to enable atomic read-write-modify operations and diverse optimizations to increase its IPS for a competition against the other students. Unfortunately, the professor requested that we did not made our code available online to avoid his future students of copying it.
 	</p>
       </div>
     </div>
+
+    <a href="http://fenwayhouse.mit.edu">
+    <div class="row project img-rounded">
+      <div class="span2">
+	<%= image_tag "fenway.jpg", class: "img-rounded" %>
+      </div>
+      <div class="span10">
+        <h3>34Fenway</h3>
+        <p class="description">
+	  34Fenway is the official website for the MIT Living Group Fenway House. I have lived at Fenway for most of my undergrad career, and I developed and maintain the website. It contains an admin dashboard for members and the website's framework is Ruby on Rails.
+	</p>
+	<!--  -->
+      </div>
+    </div>
+    </a>
+
 
     <div class="row project img-rounded">
       <div class="span2">
@@ -27,9 +72,13 @@
       </div>
       <div class="span10">
         <h3>AltSourceProbe</h3>
-        <p class="description">Nulla non metus imperdiet, aliquam massa in, sagittis augue. In eu lobortis nisl. Aliquam ac semper magna, non convallis orci. Suspendisse vitae semper nisl, in fermentum nisi. Suspendisse rutrum ante vitae arcu tincidunt porttitor. Suspendisse potenti. Sed et ante nulla. Nulla quam nisl, imperdiet vel feugiat vitae, fermentum sit amet metus. Sed ornare scelerisque turpis vel faucibus.</p>
+        <p class="description">
+ AltSourceProbe provides a wrapper and a set of useful Bluespec modules for dealing with altsource_probe, a megafunction which can be used in hardware designs as a kind of communication bus to talk with a computer in a fashion portable across Altera FPGA devices. It was written together with <a href="mailto:syscoder@gmail.com">thotypous</a>.
+	</p>
+	<p class="description">Git reposity: <a href="http://github.com/thotypous/altsourceprobe">http://github.com/thotypous/altsourceprobe</a></p>
       </div>
     </div>
+
 
   </div>
 </div>
