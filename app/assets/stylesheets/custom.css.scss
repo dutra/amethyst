@@ -230,6 +230,12 @@ div.project {
 	background: #eee;
     }
 }
+.project a {
+    &:hover {
+        text-decoration: none;
+    }
+    color: black;
+}
 .project p.description {
     color: #999999;
     font-size: 18px;
