@@ -14,7 +14,7 @@ $(document).ready(function () {
 	locationHash: true,
 	colorScheme : 'none',
 	thumbnailHoverEffect : 'labelAppear75,borderDarker',
-	//theme : 'clean',
+	theme : 'clean',
 	i18n : {'thumbnailImageDescription':'View Photo', 'thumbnailAlbumDescription':'Open Album'},
 	thumbnailLabel : {hideIcons: true, display:true,position:'overImageOnMiddle', align: 'center'},
 	thumbnailWidth : 'auto',
