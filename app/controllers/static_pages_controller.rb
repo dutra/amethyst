@@ -1,6 +1,5 @@
 class StaticPagesController < ApplicationController
   def home
-    @carousels = Carousel.all
   end
 
   def contact

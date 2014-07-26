@@ -3,57 +3,14 @@
 
 <div class="row">
 
-  <div class="span7">
-    
-    <div id="myCarousel" class="carousel slide">
-      <div class="carousel-inner">
-
-        <% @carousels.each do |carousel| %>
-        <% if carousel.id == 1 %>
-        <div class="item active">
-          <% else %>
-          <div class="item">
-            <% end %>
-            <%= image_tag carousel.file.url(:carousel) %>
-            <div class="carousel-caption">
-              <h4><%= carousel.title %></h4>
-              <p><%= carousel.description %></p>
-            </div>
-          </div>
-          <% end %>
-
-        </div>
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-      </div>
-    
+  <div class="span6">
+    <%= link_to "/albums#nanogallery/gallery/72157633250533607/8652039243" do %>
+    <%= image_tag "sunset_me.jpg", class: "img-rounded img-home" %>
+    <% end %>
   </div>
-
-  <div class="span5">
+  <div class="span6">
     <div class="page-header">
-      <h1>Hello there. I'm <span class="emph">Isaque</span>.<br/> <small>I am a college junior studying CS and Physics. During my spare time, I am an avid Linux user, developer, amateur astronomer and cheese maker. I update this website when I can; feel free to explore it.</small></h1>
+      <h1>Hello there. I'm <span class="emph">Isaque</span>.<br/> <small>I am a college junior studying Computer Science and Physics at MIT. I am originally from a small village in Minas Gerais, Brasil. Five years ago I left behind my homeland in order to pursue my studies.  <br/> During my spare time, I am an avid Archlinux user, developer, amateur astronomer and cheese maker. I update this website when I can; feel free to explore it.</small></h1>
     </div>
   </div>
-</div>
-
-
-<div class="row">
-  <div class="span12">
-
-    <h3 class="title-box">Recent Projects</h3>
-    <br>.<br>.<br>.<br>.<br>.<br>.<br>.
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="span6">
-    <h3 class="title-box">Random thoughts <small>from my blog</small></h3>
-  </div>
-
-  <div class="span6 video-box">
-    <h3 class="title-box">Lastest video</h3>
-    <iframe width="560" height="315" src="//www.youtube.com/embed/KwBRq-8nJBQ" frameborder="0" allowfullscreen></iframe>
-  </div>
-
 </div>
